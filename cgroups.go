@@ -3,7 +3,7 @@ package cgroups
 import (
 	"errors"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups/configs"
+	"github.com/opencontainers/cgroups/configs"
 )
 
 var (
@@ -18,7 +18,7 @@ var (
 
 	// DevicesSetV1 and DevicesSetV2 are functions to set devices for
 	// cgroup v1 and v2, respectively. Unless
-	// [github.com/opencontainers/runc/libcontainer/cgroups/devices]
+	// [github.com/opencontainers/cgroups/devices]
 	// package is imported, it is set to nil, so cgroup managers can't
 	// manage devices.
 	DevicesSetV1 func(path string, r *configs.Resources) error

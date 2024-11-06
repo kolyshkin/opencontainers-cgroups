@@ -3,8 +3,8 @@ package fs
 import (
 	"testing"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups/configs"
-	"github.com/opencontainers/runc/libcontainer/cgroups/fscommon"
+	"github.com/opencontainers/cgroups/configs"
+	"github.com/opencontainers/cgroups/fscommon"
 )
 
 func TestFreezerSetState(t *testing.T) {

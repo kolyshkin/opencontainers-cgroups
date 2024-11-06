@@ -25,7 +25,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups/configs"
+	"github.com/opencontainers/cgroups/configs"
 	"github.com/opencontainers/runc/libcontainer/utils"
 )
 

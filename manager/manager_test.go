@@ -3,8 +3,8 @@ package manager
 import (
 	"testing"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups/configs"
-	"github.com/opencontainers/runc/libcontainer/cgroups/systemd"
+	"github.com/opencontainers/cgroups/configs"
+	"github.com/opencontainers/cgroups/systemd"
 )
 
 // TestNilResources checks that a cgroup manager do not panic when

@@ -10,9 +10,9 @@ import (
 	systemdDbus "github.com/coreos/go-systemd/v22/dbus"
 	"github.com/sirupsen/logrus"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
-	"github.com/opencontainers/runc/libcontainer/cgroups/configs"
-	"github.com/opencontainers/runc/libcontainer/cgroups/fs"
+	"github.com/opencontainers/cgroups"
+	"github.com/opencontainers/cgroups/configs"
+	"github.com/opencontainers/cgroups/fs"
 )
 
 type LegacyManager struct {

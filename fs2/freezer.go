@@ -10,8 +10,8 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
-	"github.com/opencontainers/runc/libcontainer/cgroups/configs"
+	"github.com/opencontainers/cgroups"
+	"github.com/opencontainers/cgroups/configs"
 )
 
 func setFreezer(dirPath string, state configs.FreezerState) error {

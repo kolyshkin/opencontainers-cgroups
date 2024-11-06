@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 	"os"
-	"path"
+	"path/filepath"
 	"strconv"
 	"strings"
 	"sync"
@@ -147,7 +147,7 @@ func openFile(dir, file string, flags int) (*os.File, error) {
 		flags |= os.O_TRUNC | os.O_CREATE
 		mode = 0o600
 	}
-	path := path.Join(dir, utils.CleanPath(file))
+	path := filepath.Join(dir, filepath.Clean("/"+file))
 	if prepareOpenat2() != nil {
 		return openFallback(path, flags, mode)
 	}

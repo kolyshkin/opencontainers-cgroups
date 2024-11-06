@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups/configs"
+	"github.com/opencontainers/cgroups/configs"
 )
 
 /* Roadmap for future */
